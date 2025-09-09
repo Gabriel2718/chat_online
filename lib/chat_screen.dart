@@ -23,7 +23,11 @@ class _ChatScreenState extends State<ChatScreen> {
         ),
         elevation: 0,
       ),
-      body: TextComposer(),
+      body: TextComposer(
+        (text) {
+          print(text);
+        }
+      ),
     );
   }
 }
